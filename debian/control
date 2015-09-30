@@ -1,0 +1,13 @@
+Source: only-root-user-complainer
+Section: utils
+Priority: optional
+Maintainer: Daniel Dalgo <dalguete@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: http://dalguete.com
+Vcs-Browser: https://github.com/dalguete/only-root-user-complainer.git
+
+Package: only-root-user-complainer
+Architecture: any
+Description: Complains when no regular user is found or root is being used.
+ Complains when no regular user is found or root is being used. Don't use root at all!!!

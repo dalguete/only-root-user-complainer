@@ -1,0 +1,5 @@
+only-root-user-complainer (0.1-0ubuntu1) vivid; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Daniel Dalgo <dalguete@gmail.com>  Wed, 30 Sep 2015 11:37:33 -0500
