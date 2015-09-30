@@ -10,8 +10,6 @@
 # Daniel Dalgo <dalguete@gmail.com>
 #
 
-set -e
-
 # Set some coloring
 RED='\033[0;31m'
 LIGHTRED='\033[1;31m'
@@ -35,7 +33,7 @@ count=`echo "$_p" | awk -F':' -v "min=${l##UID_MIN}" -v "max=${l1##UID_MAX}" '{ 
 
 # Check the current user is root or there are no other regular users, to show a warning!!!
 if [ `id -u` = 0 -o $count = 0 ]; then
-	echo >&2 "\n${RED}IMPORTANT!!!${NC}\n\
+	echo -e >&2 "${RED}IMPORTANT!!!${NC}\n\
 ${ORANGE}Use of 'root' is discouraged.\nPlease, work with a different user or create a new one.${NC}\n\
 Suggestion, check ${GREEN}adduser${NC} command.\n"
 fi
