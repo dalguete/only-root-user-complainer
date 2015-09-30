@@ -1,5 +1,6 @@
 # only-root-user-complainer
-Complains when no regular user is found. **Don't use root at all!!!**
+Complains when no regular user is found or root is being used.
+**Don't use root at all!!!**
 
 Yeah, nowadays you can use root in "safer" envs, like containers, and be sure it
 won't break anything (maybe?). Or you can say "hey!, it's just in my local, it's harmless".
@@ -22,7 +23,7 @@ their hearts for that.
 Ubuntu PPA
 ==========
 
-You can find the package as a PPA here https://launchpad.net/~dalguete/+archive/ubuntu/githooks
+You can find the package as a PPA here https://launchpad.net/~dalguete/+archive/ubuntu/only-root-user-complainer
 
 Sidenote: About My Experience Creating Deb Packages Plus Ubuntu's PPA
 ---------------------------------------------------------------------
