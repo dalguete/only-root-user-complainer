@@ -19,3 +19,13 @@ That's what this script will do. Remind you to do so, so please, be consider and
 **STOP USING ROOT!!!**. There are millions of sysadmins that will thank you with
 their hearts for that.
 
+Ubuntu PPA
+==========
+
+You can find the package as a PPA here https://launchpad.net/~dalguete/+archive/ubuntu/githooks
+
+Sidenote: About My Experience Creating Deb Packages Plus Ubuntu's PPA
+---------------------------------------------------------------------
+
+http://dalguete.github.io/#about-my-experiences-creating-deb-packages-plus-ubuntus-ppa
+
