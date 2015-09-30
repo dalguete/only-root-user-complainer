@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Purpose: Display all regular users who can access the system.
+#
+# All credit and recognition to VIVEK GITE, under GPL v2.0+
+# http://www.cyberciti.biz/faq/linux-list-users-command/
+#
+# I just did some little adjustments to get my goal of only
+# display regular user if there are.
+# Daniel Dalgo <dalguete@gmail.com>
+#
+
+_l="/etc/login.defs"
+_p="$(getent passwd)"
+
+## get mini UID limit ##
+l=$(grep "^UID_MIN" $_l)
+
+## get max UID limit ##
+l1=$(grep "^UID_MAX" $_l)
+
+## use awk to print if UID >= $MIN and UID <= $MAX and shell is not /sbin/nologin   ##
+echo "$_p" | awk -F':' -v "min=${l##UID_MIN}" -v "max=${l1##UID_MAX}" '{ if ( $3 >= min && $3 <= max && $7 != "/sbin/nologin" ) print $1 }'
+
