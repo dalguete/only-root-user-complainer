@@ -1,4 +1,4 @@
-# only-root-user-complainer
+# only-root-user-complainer (DEPRECATED)
 Complains when no regular user is found or root is being used.
 **Don't use root at all!!!**
 
